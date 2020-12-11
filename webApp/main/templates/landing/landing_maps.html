@@ -1,0 +1,19 @@
+{% extends 'root.html' %}
+
+{% block title %} {% endblock %}
+
+{% block content %}
+    <div class="container">
+        {% include 'landing/el_navbar.html' %}
+
+        <div class="row landingblock">
+            <h1>Заведения с которыми мы сотрудничаем</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quia temporibus adipisci exercitationem! Maxime, eius! Ex a laboriosam iure nam autem aperiam repellat repellendus numquam, consequatur deserunt ducimus unde nemo!</p>
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A937910c5165694cc32f37dd9115a8db0e27eb0515b928021224d95b5a0d0727c&amp;source=constructor"
+                    width="100%" height="400" frameborder="0">
+                </iframe>
+        </div>
+       
+    </div>
+{% endblock %}

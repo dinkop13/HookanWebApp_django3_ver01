@@ -1,0 +1,11 @@
+{% extends 'root.html' %}
+
+{% block title %} {% endblock %}
+
+{% block content %}
+<div class="container">
+    {% include 'landing/el_navbar.html' %}
+    <a class="buttontaga" href="/auth/check">Вход в приложение</a>
+    <a class="buttontaga" href="/auth/logout">exit</a>
+</div>
+{% endblock %}

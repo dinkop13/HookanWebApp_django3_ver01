@@ -1,0 +1,26 @@
+{% extends  'worker_root.html' %}
+
+{% block title %} Вход в систему | Hookan place {% endblock %}
+
+{% block main %}
+<div class="box-login">
+    <form method="post" action="{% url 'auth' %}">
+    {% csrf_token %}
+        <h1>Вход в систему</h1>
+        <div class="form-group">
+            <label><b>Логин</b></label>
+            <input type="text" class="form-control" name="username">
+            <small id="emailHelp" class="form-text text-muted">Логин и пароль аккаунта выдает администратор</small>
+        </div>
+        <div class="form-group">
+            <label><b>Пароль</b></label>
+            <input type="password" class="form-control" name="password">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Войти</button>
+        <input type="hidden" name="next" value="{{ next }}" />
+</form>
+</div>
+
+
+{% endblock %}

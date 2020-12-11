@@ -1,0 +1,13 @@
+{% extends 'worker_root.html' %}
+
+{% block main %}
+    {% if not request.user.is_authenticated %}
+    <div class="box-login">
+        <h1 align="center"><i class="fas fa-check-circle"></i></h1>
+        <h5 align="center">Успешно вышли из системы</h5>
+
+        <a href="{% url 'login'%}">Войти заново</a>
+        <a href="{% url 'main'%}">На главную</a>
+    </div>
+    {% endif %}
+{% endblock %}

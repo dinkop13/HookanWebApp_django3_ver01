@@ -1,0 +1,14 @@
+{% extends  'worker_root.html' %}
+
+{% block title %} система Hookan place {% endblock %}
+
+{% block main %}
+    <div class="container">
+        {% if not request.user.is_authenticated %}
+            {% include 'el/auth_error.html'%}
+        {% else %}
+            {% include 'el/auth_tab.html'%}
+            {% include 'el/sesion_main.html'%}
+        {% endif %}
+    </div>
+{% endblock %}
