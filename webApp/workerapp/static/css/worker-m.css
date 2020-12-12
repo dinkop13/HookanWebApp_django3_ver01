@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(12, 12, 12);
+}
+
+p {
+    margin: 0px;
+}
+
+.lefted {
+    text-align: end;
+}
+
+.centred {
+    text-align: center;
+}
+
+.box-login {
+    background-color: azure;
+    
+    margin-top: 5em;
+    margin-left: 17%;
+    margin-right: 17%;
+    width: 66%;
+
+    padding: 1em;
+
+    border-radius: 0.5em;
+}
+
+.box-navtab {
+    background-color: azure;
+    margin: 1em;
+    padding:0.5em;
+    border-radius: 0.5em;
+}
+
+.box-content {
+    background-color: azure;
+    margin: 1em;
+    margin-top: 0px;
+    padding:0.5em;
+    border-radius: 0.5em;
+}
